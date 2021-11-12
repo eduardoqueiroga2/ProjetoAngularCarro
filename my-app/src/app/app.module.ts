@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PanelMenuModule } from 'primeng/panelmenu';
+import {MenubarModule} from 'primeng/menubar';
 import { MenuComponent } from './pages/menu/menu.component';
 import { ExibicaoComponent } from './pages/exibicao/exibicao.component';
 import { BreadcrumbComponent } from './pages/breadcrumb/breadcrumb.component';
@@ -30,7 +31,8 @@ import { MarcaComponent } from './pages/marca/marca.component';
     PanelMenuModule,
     BrowserAnimationsModule,
     FormsModule,
-    BreadcrumbModule
+    BreadcrumbModule,
+    MenubarModule
   ],
 
   providers: [ BreadcrumbComponent ],
