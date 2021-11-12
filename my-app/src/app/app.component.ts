@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { PrimeNGConfig } from 'primeng/api';
 
-import { MenuComponent } from '../app/pages/menu/menu.component';
+import { MenuComponent } from './pages/menu/menu.component';
 
 
 @Component({
