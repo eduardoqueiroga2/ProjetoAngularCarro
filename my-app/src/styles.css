@@ -14,8 +14,8 @@
   h3,
   h4,
   h5,
-  h6 {
-    margin: 8px 0;
+  h6 {    
+    text-align: center;
   }
 
   p {
@@ -43,20 +43,31 @@
     margin: 0 16px;
   }
 
-  .toolbar #twitter-logo {
-    height: 40px;
-    margin: 0 8px;
+  .toolbar #github-logo {
+    height: 30px;
+    /* width: 100%; */
+    margin: 0;
+    /* border: solid 1px red; */
   }
 
-  .toolbar #youtube-logo {
-    height: 40px;
-    margin: 0 16px;
+  .toolbar #firebase-logo {
+    height: 30px;
+    margin: 0 10px 5px 15px;
+    /* border: solid 1px red; */
+  }  
+
+  #menu-hamburguer{
+    font-size: 30px;
+    cursor: pointer;
   }
 
-  .toolbar #twitter-logo:hover,
-  .toolbar #youtube-logo:hover {
+  .toolbar #github-logo:hover,
+  .toolbar #firebase-logo:hover,
+  .toolbar #menu-hamburguer:hover{
     opacity: 0.8;
   }
+
+  
 
   .content {
     display: flex;
@@ -85,37 +96,18 @@
     padding: 0;
   }
 
-  
-  p-panelmenu-content	{
-    padding: 0;
-    margin: 0;    
-    width: 100%;
-    /* background: #212121; */
-    /* background-color: lightblue;  */
+  .p-breadcrumb{
+    /* border: solid 3px red; */
+    margin: 0 5px 0px 5px;    
   }
 
 
-.col9Style img{
-  margin: 5% auto auto 5%;
-}
-
-.col3Style{
-  /* width: 25%; */
-  /* border: solid 1px red; */
-  /* padding: 5px; */
-  /* float: left; */
-  /* height: 100vh; */
-  /* overflow: auto; */
-  /* margin-top: 5%; */
-  
-}
-
-.col9Style{
-  /* width: 100%; */
-  /* padding: 5px; */
-  /* border: solid 1px green; */
-  /* float: left; */
-  /* margin-top: 5%; */
+.col9Style img{ 
+  /* width: 70%; */
+  height: 100%;
+  max-width: 100%;
+  margin: 50px 0 0 10px;   
+  /* border: solid 3px red; */
 }
 
 body {
@@ -123,17 +115,23 @@ body {
   transition: background-color .5s;
 }
 
+.mainOpen{
+  margin-left: 200px;
+  /* border: solid 3px red; */
+}
+
 .sidenav {
   height: 100%;
-  width: 250px;
+  width: 200px;
   position: absolute;
   z-index: 9;
   /* top: 0; */
-  left: -250px;
-  /* background-color: #AAAAAA; */
+  left: -200px;
+  background-color: rgba(25, 118, 210, 0.3);
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 0;
+  padding: 0 0 0 3px;
+  /* border: solid 3px red; */
 
 }
 
@@ -145,22 +143,11 @@ body {
   transition: 0.3s;
 }
 
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  /* font-size: 36px; */
-  margin-left: 50px;
-}
-
 #main {
   padding-top: 50px;
   transition: margin-left .5s;
-  padding: 16px;
+  padding: 0px;
+
 }
 
 @media screen and (max-height: 450px) {
@@ -168,13 +155,12 @@ body {
   .sidenav a {font-size: 18px;}
 }
 
-.mainOpen{
-  margin-left: 250px;
-}
+
 
 #space{
-  height: 50px;
+  height: 65px;
   width: 100%;
+  /* border: solid 3px red;  */
 }
 
 #fundoMenu{
@@ -182,7 +168,7 @@ body {
   height: 100vh;
   left: 0;
   top: 0;
-  background-color: rgba(0,0,0,0.5);
+  /* background-color: rgba(0,0,0,0.5); */
   position: absolute;
   z-index: -1;  
 }
@@ -190,3 +176,60 @@ body {
 .zIndex{
   z-index: 0 !important;
 }
+
+.toolbar{
+  position: fixed;
+  top: 0;
+  padding-left: 15px;
+  z-index: 3;
+}
+
+
+
+/*
+.col3Style{
+  /* width: 25%; */
+  /* border: solid 1px red; */
+  /* padding: 5px; */
+  /* float: left; */
+  /* height: 100vh; */
+  /* overflow: auto; */
+  /* margin-top: 5%;   
+}
+*/
+
+
+/* .sidenav a:hover {
+  color: #ee0909;
+} */
+
+/* .sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px; 
+  margin-left: 50px;
+} 
+*/
+
+/*
+.col9Style{
+  
+  
+  /* width: 100%; */
+  /* padding: 5px; */
+  /* border: solid 1px green; */
+  /* float: left; */
+  /* margin-top: 5%; 
+}
+
+/*   
+  p-panelmenu-content	{
+    /* padding: 0;
+    margin: 0;     
+    border: solid 3px red;
+    /* width: 90%; */
+    /* background: #212121; */
+    /* background-color: lightblue; 
+  } 
+*/
