@@ -44,7 +44,7 @@
   }
 
   .toolbar #github-logo {
-    height: 30px;
+    height: 50px;
     /* width: 100%; */
     margin: 0;
     /* border: solid 1px red; */
@@ -52,7 +52,7 @@
 
   .toolbar #firebase-logo {
     height: 30px;
-    margin: 0 10px 5px 15px;
+    margin: 0 15px 5px 15px;
     /* border: solid 1px red; */
   }  
 
@@ -65,9 +65,7 @@
   .toolbar #firebase-logo:hover,
   .toolbar #menu-hamburguer:hover{
     opacity: 0.8;
-  }
-
-  
+  } 
 
   .content {
     display: flex;
