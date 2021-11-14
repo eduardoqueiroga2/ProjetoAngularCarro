@@ -1,57 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
-  <title>Projeto Angular - Eduardo</title> 
+  <title>Projeto Angular - Eduardo</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="car_icon.ico">
 </head>
-<body >
-  <app-root></app-root> 
+
+<body>
+  <app-root></app-root>
   <script>
     function openNav() {
       var element = document.getElementById("mySidenav");
       var element1 = document.getElementById("main");
       var element2 = document.getElementById("fundoMenu");
-      element.classList.toggle("menuOpen");      
+      element.classList.toggle("menuOpen");
       element1.classList.toggle("mainOpen");
       element2.classList.add("zIndex");
-      
+
       // document.getElementById("mySidenav").style.width = "250px";
       // document.getElementById("main").style.marginLeft = "250px";
       // document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
     }
-   
+
     function closeNav() {
       // document.getElementById("mySidenav").style.width = "0";
       // document.getElementById("main").style.marginLeft= "0";
       // document.body.style.backgroundColor = "white";
     }
-    </script>
-    <script>
-       // Get the modal
-       
-       
+  </script>
+  <script>
+    // Get the modal
+
+
     // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
+    window.onclick = function (event) {
       var classes = event.target.classList;
+      // alert(event.target.classList);
       var modal = document.getElementById('mySidenav');
-        if (event.target.nodeName == 'DIV' || event.target.classList.contains('ng-tns-c58-1')  || event.target.classList.contains('ng-tns-c58-2')) {
-          // if (false) {
-          // alert('ok!');
-          var element = document.getElementById("mySidenav");
-          var element1 = document.getElementById("main");
-          var element2 = document.getElementById("fundoMenu");
-          element.classList.remove("menuOpen");      
-          element1.classList.remove("mainOpen");
-          element2.classList.remove("zIndex");
-          // alert(event.target.className);
-        }
+      if (event.target.nodeName == 'DIV' ||
+          event.target.classList.contains('ng-tns-c14-1') ||          
+          event.target.classList.contains('ng-tns-c14-2') ) {
+        // if (false) {
+        // alert('ok!');
+        var element = document.getElementById("mySidenav");
+        var element1 = document.getElementById("main");
+        var element2 = document.getElementById("fundoMenu");
+        element.classList.remove("menuOpen");
+        element1.classList.remove("mainOpen");
+        element2.classList.remove("zIndex");
+        // alert(event.target.className);
+      }
     }
-    
-    </script>
+
+  </script>
 </body>
+
 </html>
 
 <!-- 
@@ -93,4 +99,3 @@ function closeNav() {
    
 </body>
 </html>  -->
-
