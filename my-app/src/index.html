@@ -3,10 +3,10 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Projeto Angular - Eduardo</title>
+  <title>Projeto Angular - Edu</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="car_icon.ico">
+  <link rel="icon" type="image/x-icon" href="./assets/favicons/fusca.ico">
 </head>
 
 <body>
@@ -38,34 +38,13 @@
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function (event) {
       var classes = event.target.classList;
-      // alert(event.target.classList);
-      if(event.target.classList == 'p-menuitem-text ng-star-inserted'){
-        openNav();
-      }
+      // alert(event.target.nodeName);
+   
       var modal = document.getElementById('mySidenav');
-      if (event.target.nodeName == 'DIV' ||
-          event.target.classList.contains('ng-tns-c58-1') ||
-          event.target.classList.contains('ng-tns-c58-2') ||
-          event.target.classList.contains('ng-tns-c58-3') ||
-          event.target.classList.contains('ng-tns-c58-4') ||
-          event.target.classList.contains('ng-tns-c58-5') ||
-          event.target.classList.contains('ng-tns-c58-6') ||
-          event.target.classList.contains('ng-tns-c58-7') ||
-          event.target.classList.contains('ng-tns-c58-8') ||
-          event.target.classList.contains('ng-tns-c58-9') ||
-          event.target.classList.contains('ng-tns-c58-10') ||
-          event.target.classList.contains('ng-tns-c14-1') ||
-          event.target.classList.contains('ng-tns-c14-2') ||
-          event.target.classList.contains('ng-tns-c14-3') ||
-          event.target.classList.contains('ng-tns-c14-4') ||
-          event.target.classList.contains('ng-tns-c14-5') ||
-          event.target.classList.contains('ng-tns-c14-6') ||
-          event.target.classList.contains('ng-tns-c14-7') ||
-          event.target.classList.contains('ng-tns-c14-8') ||
-          event.target.classList.contains('ng-tns-c14-9') ||        
-          event.target.classList.contains('ng-tns-c14-10') ) {
-        // if (false) {
-        // alert('ok!');
+      if (/* event.target.nodeName == 'DIV' || */
+          event.target.classList.contains('pi pi-home')
+         ) {
+        
         var element = document.getElementById("mySidenav");
         var element1 = document.getElementById("main");
         var element2 = document.getElementById("fundoMenu");
@@ -74,6 +53,14 @@
         element2.classList.remove("zIndex");
         // alert(event.target.className);
       } 
+
+      if(event.target.classList == 'p-menuitem-text ng-star-inserted' ||
+          event.target.nodeName == 'DIV' ||
+          event.target.nodeName == 'IMG'){
+        openNav();
+        var element2 = document.getElementById("fundoMenu");
+        element2.classList.remove("zIndex");
+      }
       
     }
 
@@ -120,4 +107,30 @@ function closeNav() {
 </script>
    
 </body>
-</html>  -->
+</html>  
+
+// if (false) {
+        // alert('ok!');
+
+ /* ||
+          event.target.classList.contains('ng-tns-c58-2') ||
+          event.target.classList.contains('ng-tns-c58-3') ||
+          event.target.classList.contains('ng-tns-c58-4') ||
+          event.target.classList.contains('ng-tns-c58-5') ||
+          event.target.classList.contains('ng-tns-c58-6') ||
+          event.target.classList.contains('ng-tns-c58-7') ||
+          event.target.classList.contains('ng-tns-c58-8') ||
+          event.target.classList.contains('ng-tns-c58-9') ||
+          event.target.classList.contains('ng-tns-c58-10') ||
+          event.target.classList.contains('ng-tns-c14-1') ||
+          event.target.classList.contains('ng-tns-c14-2') ||
+          event.target.classList.contains('ng-tns-c14-3') ||
+          event.target.classList.contains('ng-tns-c14-4') ||
+          event.target.classList.contains('ng-tns-c14-5') ||
+          event.target.classList.contains('ng-tns-c14-6') ||
+          event.target.classList.contains('ng-tns-c14-7') ||
+          event.target.classList.contains('ng-tns-c14-8') ||
+          event.target.classList.contains('ng-tns-c14-9') ||        
+          event.target.classList.contains('ng-tns-c14-10')  */
+
+-->

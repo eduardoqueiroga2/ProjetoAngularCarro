@@ -149,10 +149,7 @@ body {
 
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
+
 
 
 
@@ -183,6 +180,72 @@ body {
   z-index: 3;
 }
 
+.selfie{
+  /* text-align: center; */
+  margin-top: 3%;
+  /* border: solid 3px red; */
+}
+
+.selfie #Eduardo{
+  /*   border: solid 3px red; */    
+    border-radius: 50%;
+    height: 33%;
+    margin: 2% 0 0 53%;
+    position: fixed;
+  }
+  
+  .selfie #Angular{
+      /* border: solid 3px red; */
+      border-radius: 50%;
+      height: 40%;
+      margin: 0 0 0 28%;
+      position: fixed;
+    }
+
+    @media (max-width: 450px) {
+      h1,
+      h2 {
+        font-size: 1.5em;
+      }
+      .col9Style h1{     
+        margin-top: 30px;
+      }
+    
+      .col9Style h2{     
+        margin-bottom: 30px;
+      }
+    
+      .selfie #Eduardo{
+        /*   border: solid 3px red; */    
+          border-radius: 50%;
+          height: 15%;
+          margin: 4% 0 0 60%;
+          position: fixed;
+        }
+        
+        .selfie #Angular{
+            /* border: solid 3px red; */
+            border-radius: 50%;
+            height: 19%;
+            margin: 0 0 0 -5%;
+            position: fixed;
+          }
+      
+    }
+
+
+
+/*
+.col9Style{  
+  
+  /* width: 100%; */
+  /* padding: 5px; */
+  /* border: solid 1px green; */
+  /* float: left; */
+  /* margin-top: 5%; 
+}
+*/
+
 
 
 /*
@@ -212,15 +275,7 @@ body {
 */
 
 /*
-.col9Style{
-  
-  
-  /* width: 100%; */
-  /* padding: 5px; */
-  /* border: solid 1px green; */
-  /* float: left; */
-  /* margin-top: 5%; 
-}
+
 
 /*   
   p-panelmenu-content	{

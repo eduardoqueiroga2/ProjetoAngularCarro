@@ -20,7 +20,7 @@ export class MenuComponent implements OnInit {
                 label: 'Chevrolet',                
                 routerLink: 'marca',
                 queryParams: {                
-                    url: '../assets/Chevrolet-Logo.png',                        
+                    url: '../assets/Chevrolet/Chevrolet-Logo.png',                        
                             modelo:'',
                             marca:'Chevrolet'                
                 },

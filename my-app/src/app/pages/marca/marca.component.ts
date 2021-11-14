@@ -42,8 +42,8 @@ export class MarcaComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.home = {icon: 'pi pi-home', routerLink: '/home'};
-  }
+    this.home = {icon: 'pi pi-home', routerLink: '/home'};    
+  } 
 
   
   public InsereRota(marca: string, modelo: string){
