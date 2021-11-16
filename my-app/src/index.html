@@ -13,11 +13,11 @@
   <app-root></app-root>
   <script>
     function openNav() {
-      var element = document.getElementById("mySidenav");
-      var element1 = document.getElementById("main");
+      var element = document.getElementById("menuLateral");
+      /* var element1 = document.getElementById("telaPrincipal"); */
       var element2 = document.getElementById("fundoMenu");
-      element.classList.toggle("menuOpen");
-      element1.classList.toggle("mainOpen");
+      element.classList.toggle("abrirMenu");
+     /*  element1.classList.toggle("abrirMenu"); */
       element2.classList.add("zIndex");
 
       // document.getElementById("mySidenav").style.width = "250px";
@@ -40,16 +40,16 @@
       var classes = event.target.classList;
       // alert(event.target.nodeName);
    
-      var modal = document.getElementById('mySidenav');
+      var modal = document.getElementById('menuLateral');
       if (/* event.target.nodeName == 'DIV' || */
           event.target.classList.contains('pi pi-home')
          ) {
         
-        var element = document.getElementById("mySidenav");
-        var element1 = document.getElementById("main");
+        var element = document.getElementsByClassName("menuLateral");
+        /* var element1 = document.getElementsByClassName("telaPrincipal"); */
         var element2 = document.getElementById("fundoMenu");
-        element.classList.remove("menuOpen");
-        element1.classList.remove("mainOpen");
+        element.classList.remove("abrirMenu");
+       /*  element1.classList.remove("abrirMenu"); */
         element2.classList.remove("zIndex");
         
       } 

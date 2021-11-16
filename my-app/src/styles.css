@@ -1,29 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+   /* Estilização da Barra Superior Azul (Toolbar) */
 
- :host {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 14px;
-    color: #333;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {    
-    text-align: center;
-  }
-
-  p {
-    margin: 0;
-  }
-
-  .spacer {
+   .spacer {
     flex: 1;
+    /* border: solid 3px red; */
   }
 
   .toolbar {
@@ -34,247 +13,263 @@
     height: 60px;
     display: flex;
     align-items: center;
-    background-color: #1976d2;
-    color: white;
-    font-weight: 600;
+    background-color: #1976d2;    
     /* border: solid 3px red; */
-  }
+  } 
 
-  .toolbar img {
-    margin: 0 16px;
-  }
-
-  .toolbar #github-logo {
+  #github-logo {
     height: 50px;
-    /* width: 100%; */
     margin: 0;
+    /* width: 100%; */
     /* border: solid 1px red; */
   }
 
-  .toolbar #firebase-logo {
+  #firebase-logo {
     height: 30px;
     margin: 0 15px 5px 15px;
     /* border: solid 1px red; */
-  }  
- 
+  } 
+  
+  .toolbar #fusca-logo {
+    height: 70px;
+    margin: 0 0 0 -77em;
+    /* position: absolute; */
+  } 
 
-  #menu-hamburguer{
-    font-size: 30px;
-    cursor: pointer;
+  /* Opção para Esconder o Menu Hamburguer em DeskTop */
+  #menu-hamburguer{    
     opacity: 0;
   }
 
-  .toolbar #github-logo:hover,
-  .toolbar #firebase-logo:hover,
-  .toolbar #fusca-logo:hover,
-  .toolbar #menu-hamburguer:hover{
+  #github-logo:hover,
+  #firebase-logo:hover,
+  #fusca-logo:hover{
     opacity: 0.8;
-  } 
+  }   
+  
+   /* --------------------------------------------------------///--------------------------------------*/
+  
+  /* Estilização da Tela Home */
 
-  .content {
-    display: flex;
-    margin: 82px 32px;
-    padding: 0 16px;
-    max-width: 960px;
-    flex-direction: column;
-    align-items: center;
+  .tela_home{
+    margin: 2px 2px 0 202px;
+    padding-top: 20px;
+    width: 85%;
+    height: 80%;
+    position: fixed;
+    background-color: #1976D2; 
+    border-radius: 0.5%;  
+    /*  border: solid 3px red; */
+  }
+  
+  .breadcrumb_home .p-breadcrumb{    
+      margin: 0 2px 0 202px;
+      background-color: #fcfbc5;    
   }
 
-  svg.material-icons {
-    height: 24px;
-    width: auto;
+  .tela_home h1{
+    text-align: center;
+    margin: 3% 0 20% 0;
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-weight: lighter;
+    /* text-decoration: underline; */
   }
 
-  .box{
+  .tela_home h2,
+  .tela_home h3,
+  .tela_home h4
+   {    
+    text-align: right;
+    margin: 0 15px 10px 0;    
+    color: white;
+    font-weight: lighter;
+    font-family: "Lato", sans-serif;
     /* border: solid 1px red; */
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    
   }
 
-  body{
-    margin: 0;
-    padding: 0;
-  }
-
-  .p-breadcrumb{
-    /* border: solid 3px red; */
-    margin: 0 5px 0px 5px;    
-    /* background-color: lightblue; */
-  }
-
-
-.col9Style img{ 
-  /* width: 70%; */
-  height: 350px;  
-  max-width: 100%;
-  margin: 20px 0 0 100px;   
-  /* border: solid 3px red; */
-}
-
-body {
-  font-family: "Lato", sans-serif;
-  transition: background-color .5s;
-}
-
-.sidenav {
-  height: 85%;
-  width: 200px;
-  position: absolute;
-  z-index: 9;
-  /* top: 0; */
-  /* left: -200px; */
-  /* background-color: rgba(25, 118, 210, 0.3); */
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding: 0 0 0 3px;
-  /* border: solid 3px red; */
-
-}
-
-.col9Style{
-  margin: 0 0 0 200px;
- /*  border: solid 3px red; */
-}
-
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-#main {
-  padding-top: 50px;
-  transition: margin-left .5s;
-  padding: 0px;
   
 
-}
-
-#space{
-  height: 65px;
-  width: 100%;
-  /* border: solid 3px red;  */
-}
-
-#fundoMenu{
-  width: 100vw;
-  height: 100vh;
-  left: 0;
-  top: 0;
-  /* background-color: rgba(0,0,0,0.5); */
-  position: absolute;
-  z-index: -1;  
-}
-
-.zIndex{
-  z-index: 0 !important;
-}
-
-.toolbar{
-  position: fixed;
-  top: 0;
-  /* padding-left: 15px; */
-  z-index: 3;
-  padding: 0;
-}
-
-.selfie{
-  /* text-align: center; */
-  margin-top: 3%;
-  /* border: solid 3px red; */
-}
-
-.selfie #Eduardo{
-  /*   border: solid 3px red; */    
+  #Eduardo{
     border-radius: 50%;
-    height: 33%;
-    margin: 2% 0 0 60%;
+    height: 20%;
+    margin: 10% 0 0 60%;    
     position: fixed;
+    /*   border: solid 3px red; */    
   }
-  
-  .selfie #Angular{
-      /* border: solid 3px red; */
+    
+    #Angular{
       border-radius: 50%;
-      height: 40%;
-      margin: 0 0 0 30%;
+      height: 25%;
+      margin: 9% 0 0 40%; 
       position: fixed;
+      /* border: solid 3px red; */
     }
 
-    @media (max-width: 450px) {
-      h1,
-      h2 {
-        font-size: 1.5em;
+/* --------------------------------------------------------///--------------------------------------*/
+    
+  /* Estilização da Tela Principal (Exibição e Marca) */
+  
+.tela_principal{
+  position: fixed;
+  top: 62px;
+  left: 0;
+  right: 0;
+  bottom: 0;   
+  /* border: solid 3px red; */
+}
+
+.Menu_Lateral{
+    height: 100%;
+    width: 200px;
+    position: fixed;    
+    overflow-x: hidden; 
+       
+    /* border: solid 3px red; */
+  }
+
+.p-breadcrumb{
+  margin: 0 2px 0 202px;
+  /* background-color: #fcfbc5; */
+  
+}
+
+.tela_principal img{
+  margin: 30px 0 0 250px;
+  height: 400px;  
+  
+}
+
+/* --------------------------------------------------------///--------------------------------------*/
+    
+  /* Estilização para Celular */ 
+
+    /* Estas configurações serão aplicadas a telas com no máximo 450 pixels */
+    @media (max-width: 450px) {  
+      
+      /* Estilização da Barra Superior Azul (Toolbar) */
+
+      #menu-hamburguer{
+        font-size: 30px;
+        opacity: 1;
+        color: white;
+        /* cursor: pointer;   */          
       }
-      .col9Style h1{     
-        margin-top: 30px;
+
+      #menu-hamburguer:hover{
+        opacity: 0.8;
+      } 
+
+      #fusca-logo {
+        opacity: 0;
+      } 
+
+      .toolbar{
+        padding-left: 15px;
+      }
+  
+      /* Estilização da Tela Home */
+
+      .tela_home{
+        margin: 2px;
+        padding-top: 20px;
+        width: 99%;
+        height: 85%;
+        position: fixed;
+        background-color: #1976D2; 
+        border-radius: 0.5%;
+        z-index: -3;
+        /*  border: solid 3px red; */
+      }
+
+      .tela_home h1{      
+        margin: 3% 0 90% 0;     
+        /* text-decoration: underline; */
       }
     
-      .col9Style h2{     
-        margin-bottom: 30px;
+      .tela_home h2,
+      .tela_home h3{      
+        margin: 0 15px 10px 0;    
+        color: white;      
+        font-size: 18px;      
+        /* border: solid 1px red; */
       }
-    
-      .selfie #Eduardo{
-        /*   border: solid 3px red; */    
-          border-radius: 50%;
-          height: 15%;
-          margin: 4% 0 0 60%;
-          position: fixed;
-        }
-        
-        .selfie #Angular{
-            /* border: solid 3px red; */
+
+      .tela_home h4{       
+        font-size: 13px;
+        font-family: "Lato", sans-serif;
+        /* border: solid 1px red; */
+      }     
+      
+        #Eduardo{
+          /*   border: solid 3px red; */    
             border-radius: 50%;
-            height: 19%;
-            margin: 0 0 0 -5%;
+            height: 15%;
+            margin: 55% 0 0 55%;
             position: fixed;
+            z-index: -2;
+          }
+          
+          #Angular{
+              /* border: solid 3px red; */
+              border-radius: 50%;
+              height: 19%;
+              margin: 50% 0 0 -5%;
+              position: fixed;
+              z-index: -2;
+            }         
+          
+            /* Estilização do Menu Lateral */
+
+          .efeitoMenu {            
+            height: 85%;
+            width: 200px;
+            position: absolute;    
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding: 0 0 0 3px;
+            left: -200px;         
           }
 
-          .col9Style img{ 
+          .abrirMenu{
+            margin-left: 200px;           
+          }         
+
+          #menuLateral{
+            height: 85%;
+            width: 200px;
+            position: absolute;    
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding: 0 0 0 3px;
+            margin-top: 50px;
+          }
+
+           /* Estilização da Tela Principál */
+
+           #telaPrincipal{
+            margin: 0;           
+            padding: 0px;
+             /*  border: solid 1px red;  */   
+            } 
+
+          .tela_principal img{ 
             /* width: 70%; */
-            height: 200px;  
-            max-width: 100%;
-            margin: 50px 0 0 10px;   
+            height: 300px;  
+            max-width: 99%;
+            margin: 50px 0 0 2px;   
             /* border: solid 3px red; */
           }
 
-          .sidenav {
-            left: -200px;
-          }
-
-          .col9Style{
-            margin: 0;
-            /* border: solid 3px red; */
-          }
-
-          .mainOpen{
-            margin-left: 200px;
+          .tela_principal .p-breadcrumb{
+            margin: 0 2px 0 0;
+           /*  background-color: #fcfbc5; */
+            /* outline: 1px solid red;  */         
             
-            /* border: solid 3px red; */
-          }
-
-          #menu-hamburguer{            
-            opacity: 1;
-          }
-
-          .toolbar #fusca-logo {
-            opacity: 0;
-          } 
-
-          .toolbar{
-            padding-left: 15px;
           }
     }
 
-    .toolbar #fusca-logo {
-      height: 70px;
-      /* position: absolute; */
-      margin: 0 0 0 -77em;
-    } 
+    
 
 /*
 .col9Style{  
@@ -285,11 +280,7 @@ body {
   /* float: left; */
   /* margin-top: 5%; 
 }
-*/
 
-
-
-/*
 .col3Style{
   /* width: 25%; */
   /* border: solid 1px red; */
@@ -299,27 +290,20 @@ body {
   /* overflow: auto; */
   /* margin-top: 5%;   
 }
-*/
 
-
-/* .sidenav a:hover {
+.sidenav a:hover {
   color: #ee0909;
-} */
+} 
 
-/* .sidenav .closebtn {
+.sidenav .closebtn {
   position: absolute;
   top: 0;
   right: 25px;
   font-size: 36px; 
   margin-left: 50px;
 } 
-*/
-
-/*
-
-
-/*   
-  p-panelmenu-content	{
+  
+p-panelmenu-content	{
     /* padding: 0;
     margin: 0;     
     border: solid 3px red;
@@ -327,4 +311,99 @@ body {
     /* background: #212121; */
     /* background-color: lightblue; 
   } 
-*/
+
+  You can add global styles to this file, and also import other style files
+
+ :host {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+    p {
+    margin: 0;
+  }
+
+    .content {
+    display: flex;
+    margin: 82px 32px;
+    padding: 0 16px;
+    max-width: 960px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+   .toolbar{
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    padding: 0;
+    font-weight: 600;
+    color: white;
+    padding-left: 15px; 
+  }
+
+  svg.material-icons {
+    height: 24px;
+    width: auto;
+  }
+
+  .box{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+   border: solid 1px red; 
+    
+  }
+
+  body{
+    margin: 0;
+    padding: 0;
+    border: solid 1px red;     
+    transition: background-color .5s; 
+  }
+
+   
+
+  .sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+ .tela_principal {
+    padding-top: 50px;
+    transition: margin-left .5s;
+    padding: 0px;
+    border: solid 3px red;
+  }
+
+  .exibicao img{ 
+  height: 350px;  
+  max-width: 100%;
+  margin: 20px 0 0 100px;   
+  /* width: 70%; */
+  /* border: solid 3px red;   
+}
+
+   #fundoMenu{
+          width: 100vw;
+          height: 100vh;
+          left: 0;
+          top: 0;
+           background-color: rgba(0,0,0,0.5); 
+          position: absolute;
+          z-index: -1;  
+        }
+        
+        .zIndex{
+          z-index: 0 !important;
+        }
+
+
+  */
