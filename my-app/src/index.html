@@ -14,10 +14,10 @@
   <script>
     function openNav() {
       var element = document.getElementById("menuLateral");
-      /* var element1 = document.getElementById("telaPrincipal"); */
+      var element1 = document.getElementById("telaPrincipal");
       var element2 = document.getElementById("fundoMenu");
       element.classList.toggle("abrirMenu");
-     /*  element1.classList.toggle("abrirMenu"); */
+      element1.classList.toggle("abrirMenu");
       element2.classList.add("zIndex");
 
       // document.getElementById("mySidenav").style.width = "250px";
@@ -46,10 +46,10 @@
          ) {
         
         var element = document.getElementsByClassName("menuLateral");
-        /* var element1 = document.getElementsByClassName("telaPrincipal"); */
+        var element1 = document.getElementsByClassName("telaPrincipal");
         var element2 = document.getElementById("fundoMenu");
         element.classList.remove("abrirMenu");
-       /*  element1.classList.remove("abrirMenu"); */
+        element1.classList.remove("abrirMenu");
         element2.classList.remove("zIndex");
         
       } 
